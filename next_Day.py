@@ -4,15 +4,14 @@ Spyder Editor
 
 This is a temporary script file.
 """
-def next_Day(year, month, date):
-    if date<=29:
-        return year, month, int(date)+1
+def nextDay(year, month, day):
+    """Simple version: assume every month has 30 days"""
+    if day < 30:
+        return year, month, day + 1
     else:
-        if month==12:
-            return int(year)+1, 1, 1
+        if month == 12:
+            return year + 1, 1, 1
         else:
-            return year, int(month)+1, 1
-        
-year, month, day=next_Day(1997, 10, 1)
-print month
+            return year, month + 1, 1
 
+print nextDay(1997, 10, 11)
