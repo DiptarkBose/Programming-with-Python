@@ -14,4 +14,4 @@ def nextDay(year, month, day):
         else:
             return year, month + 1, 1
 
-print nextDay(1997, 10, 11)
+print nextDay(1997, 12, 30)
